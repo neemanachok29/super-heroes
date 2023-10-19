@@ -1,6 +1,6 @@
 import random
-from migrations.versions.app import app, db
-from migrations.models import db, Power, Hero, HeroPower
+from server.app import app, db
+from server.models import db, Power, Hero, HeroPower
 
 app.app_context().push()
 

@@ -2,7 +2,7 @@
 from flask import Flask, make_response
 from flask_migrate import Migrate
 from flask_restful import Api, Resource, reqparse, abort
-from migrations.models import db, Hero, Power, HeroPower
+from server.models import db, Hero, Power, HeroPower
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
